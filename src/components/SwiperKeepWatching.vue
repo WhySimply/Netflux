@@ -14,11 +14,11 @@
 
       <swiper-slide v-for="item in moviesList" :key="item"
                     class=" rounded relative flex items-stretch transition-all keepwatching-swiper">
-        <template v-if="!!item">
+        <template v-if="!!item" @click="this.$toast.success('To Do...')">
           <img :src="`https://image.tmdb.org/t/p/w500${item.backdrop_path}`" alt="" class="w-full rounded">
           <div
               class="detail absolute top-0 left-0 text-white w-full h-full flex items-center justify-center flex-col rounded">
-            <div class="relative" @click="this.$toast.success('To Do...')">
+            <div class="relative">
               <video class="w-16 hidden lg:block" muted="" autoplay preload="auto" playsinline="" loop="" tabindex="-1">
                 <source src="https://ssl.gstatic.com/stadia/gamers/assets/playbutton-idle.webm" type="video/webm">
               </video>

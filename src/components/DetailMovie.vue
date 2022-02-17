@@ -15,10 +15,11 @@
           'bg-red-600': movie.vote_average <= 4,
         }"><p>{{ movie.vote_average }}</p></div>
           <p class="mt-2 text-white text-left line-clamp-3 overflow-ellipsis text-center lg:text-left">{{
-            movie.overview
+              movie.overview
             }}</p>
           <div class="flex flex-col lg:flex-row mt-5 mx-auto lg:mx-0">
-            <base-button class="mb-3 lg:mb-0 lg:mr-5" @clickOnButton="this.$toast.success(`ToDo...`)">Regarder</base-button>
+            <base-button class="mb-3 lg:mb-0 lg:mr-5" @clickOnButton="this.$toast.success(`ToDo...`)">Regarder
+            </base-button>
             <button-favorite :movie="movie"></button-favorite>
           </div>
         </div>
@@ -53,9 +54,9 @@ export default {
   created() {
     const detailMovieStore = useDetailMovieStore();
     const favoritesMoviesStore = useFavoritesMoviesStore();
-    detailMovieStore.$subscribe(el => {
-      if (el.events.newValue) {
-        this.movie = el.events.newValue
+    detailMovieStore.$subscribe(() => {
+      if (detailMovieStore.movie) {
+        this.movie = detailMovieStore.movie;
         this.isFavorites = favoritesMoviesStore.favorites.find(el => el.id === this.movie.id);
       } else {
         this.movie = null;
