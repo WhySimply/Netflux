@@ -1,0 +1,55 @@
+{
+  "name": "netflux",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@meforma/vue-toaster": "^1.3.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "autoprefixer": "^9.8.8",
+    "axios": "^0.26.0",
+    "core-js": "^3.6.5",
+    "mitt": "^3.0.0",
+    "pinia": "^2.0.11",
+    "postcss": "^7.0.39",
+    "swiper": "^6.8.4",
+    "vue": "^3.0.0",
+    "vue-cli-plugin-tailwind": "^2.2.18",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.49.7",
+    "sass-loader": "^10.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

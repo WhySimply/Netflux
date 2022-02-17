@@ -1,0 +1,13 @@
+@keyframes lazyLoading {
+  0% {
+    background: #4b4b4b;
+  }
+  50% {
+    background: #878787;
+  }
+  100% {
+    background: #4b4b4b;
+  }
+}
+
+/*# sourceMappingURL=commons.css.map */

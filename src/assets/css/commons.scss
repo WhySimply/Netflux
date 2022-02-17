@@ -1,0 +1,11 @@
+@keyframes lazyLoading {
+  0% {
+    background: rgb(75, 75, 75);
+  }
+  50% {
+    background: rgb(135, 135, 135);
+  }
+  100% {
+    background: rgb(75, 75, 75);
+  }
+}

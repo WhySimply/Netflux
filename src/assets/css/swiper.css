@@ -1,0 +1,14 @@
+.swiper-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.swiper-slide {
+    transition: all .25s ease;
+    z-index: 10;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: white;
+    text-shadow: 2px 2px 5px rgb(25 25 25 / 85%);
+}
